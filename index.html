@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="board.css">
+    <title>Cifrado y Decifrado de Favela</title>
+    <script>
+        alert("Bienvenido usuario, al estar aquí estás bajo tu responsabilidad"); 
+    </script>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <div id="tittle">
+        <h1>"¡Cifrador Y Decifrador De Palabras!"</h1>
+    </div>
+
+    <div id="contenedor-1">
+
+        <form id="forma-contenedor1" action="#">
+
+            <div id="contenedor1" autocomplete="off">
+                <h1>Mensaje Original</h1>
+            </div>
+
+            <div>
+                <input required id="text1" placeholder="Ingrese el texto"  type="text">
+            </div>
+                    
+            <div id="boton">
+                <button onclick="cipherText(document.getElementById('shift').value)">Cifrar</button>
+            </div>
+
+            <div id="titulo-contenedor1">
+                <h1>Mensaje Cifrado</h1>
+            </div>
+
+            <div>
+                <input id="result" disabled type="text">
+            </div>
+        </form>
+    </div>
+
+    <div id="contenedor-2">
+
+        <form id="forma-contenedor2" action="#">
+
+            <div id="contenedor2">
+                <h1>Cifra de Salto</h1>
+            </div>
+            
+            <div>
+                <input required id="shift" type="number" min="1" max="25" value="5">
+              </div>
+        </form>
+    </div>
+
+    <div id="contenedor-3">
+
+        <form id="forma-contenedor3" action="#">
+
+            <div id="contenedor3">
+                <h1>Mensaje Cifrado</h1>
+            </div>
+
+            <div>
+                <input required id="text4" placeholder="Ingrese el texto" type="text">
+            </div>
+
+            <div id="boton2">
+                <button onclick="decipherText()">Decifrar</button>
+            </div>
+
+            <div id="titulo-contenedor2">
+                <h1>Mensaje Decifrado</h1>
+            </div>
+
+            <div>
+                <input id="result1" disabled type="text">
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src=particles.min.js></script>
+    <script src="particlesjs-config.json"></script>
+    
+</body>
+</html>
